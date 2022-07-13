@@ -3,6 +3,7 @@ console.log('vue ok', Vue)
 const root = new Vue ({
     el: "#root",
     data : {
+        newTask: '',
         tasks: [
         {
             text: 'Fare la lavatrice',
@@ -27,6 +28,10 @@ const root = new Vue ({
         },
         removeTask(i) {
             this.tasks.splice( i , 1 )
+        },
+        addTask() {
+            this.tasks.push(this.newTask);
+            newTask= '';
         }
 
     }

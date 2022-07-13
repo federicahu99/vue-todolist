@@ -20,6 +20,10 @@
 <body>
     <h1> To do list :</h1>
     <div id="root">
+    <div class="input-group mb-4">
+        <input type="text" class="form-control _addTask" placeholder="Nuova task..." v-model="newTask">
+        <button class="btn btn-primary" type="button" id="button-addon2" @click="addTask">Aggiungi</button>
+    </div>
     <ul>
 
         <li class="_listitem" v-for="(task, i) of tasks">
@@ -27,6 +31,7 @@
             <span :class="{'_done' : task.done == true}"> {{ task.text }} </span>
             <i class="bi bi-backspace _cancel" @click="removeTask"></i>
         </li>
+        
 
     </ul>
 

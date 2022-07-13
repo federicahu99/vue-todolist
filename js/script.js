@@ -22,11 +22,9 @@ const root = new Vue ({
         }
     ]}, 
     methods: {
-        underlineIt() {
-            if (this.done = false) {
-                return this.done = true;
-            }
+        toggleDone() {
+            this.done = !this.done
         }
-        
+
     }
 })

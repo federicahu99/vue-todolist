@@ -17,3 +17,9 @@ body {
     border: 1px solid grey;
     padding: 10px 15px;
 }
+
+/* JS */
+
+._done {
+    text-decoration:line-through;
+}

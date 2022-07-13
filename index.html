@@ -21,7 +21,9 @@
     <ul>
 
         <li class="_listitem" v-for="(task, i) of tasks">
-            <button type="button" class="btn btn-primary" v-on:click="underlineIt"> Fatto! </button> {{ task.text }} </li>
+            <button type="button" class="btn btn-primary btn-sm" @click="toggleDone"> Fatto! </button> 
+            <span :class="{_done : task.done == true}"> {{ task.text }} </span>
+        </li>
 
     </ul>
 

@@ -16,6 +16,12 @@ body {
     list-style-type: none;
     border: 1px solid grey;
     padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+._cancel {
+
 }
 
 /* JS */

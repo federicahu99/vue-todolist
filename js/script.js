@@ -24,6 +24,9 @@ const root = new Vue ({
     methods: {
         toggleDone(task) {  // passo parametro solo se l'azione da compire riguarda l'osggetto stesso o il suo indice 
            return task.done = !task.done
+        },
+        removeTask(i) {
+            this.tasks.splice( i , 1 )
         }
 
     }

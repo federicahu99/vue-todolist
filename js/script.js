@@ -3,7 +3,7 @@ console.log('vue ok', Vue)
 const root = new Vue ({
     el: "#root",
     data : {
-        todo: [
+        tasks: [
         {
             text: 'Fare la lavatrice',
             done: false
@@ -20,5 +20,13 @@ const root = new Vue ({
             text: 'Pulire il garage',
             done: false
         }
-    ]}
+    ]}, 
+    methods: {
+        underlineIt() {
+            if (this.done = false) {
+                return this.done = true;
+            }
+        }
+        
+    }
 })

@@ -16,13 +16,18 @@
     <title>To Do List</title>
 </head>
 <body>
-
+    <h1> To do list :</h1>
     <div id="root">
-    
+    <ul>
+
+        <li class="_listitem" v-for="(task, i) of tasks">
+            <button type="button" class="btn btn-primary" v-on:click="underlineIt"> Fatto! </button> {{ task.text }} </li>
+
+    </ul>
 
  
     </div>
-    
+
     <script src="js/script.js"></script>
 </body>
 </html>

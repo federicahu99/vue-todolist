@@ -30,8 +30,12 @@ const root = new Vue ({
             this.tasks.splice( i , 1 )
         },
         addTask() {
-            this.tasks.push(this.newTask);
-            newTask= '';
+            let object={ //pusho oggetto non array
+                text: this.newTask,
+                done: false
+            }
+            this.tasks.push(object);
+            this.newTask= '';
         }
 
     }
